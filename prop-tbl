@@ -42,7 +42,7 @@ if __name__ == "__main__":
     json_data = json.loads(json_obj)
 
     # insert root node
-    #insert_entry(json_data["property_id"], json_data["property_name"], json_data["property_name"], db, cursor)
+    insert_entry(json_data["property_id"], json_data["property_name"], json_data["property_name"], db, cursor)
 
     # go through second and third level children/nodes
     for group in json_data["child_properties"]:
